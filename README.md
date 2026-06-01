@@ -2,7 +2,7 @@
 
 ## What is bwui?
 
-bwui is a lightweight CSS framework for building functional user interfaces with minimal configuration.
+bwui (pronounced as buoy) is a lightweight CSS framework for building functional user interfaces with minimal configuration.
 
 It provides a consistent set of components, layouts, and styling conventions built around a monochrome design system and the BEM methodology. The goal is to help developers move quickly while maintaining readability, consistency, and long-term maintainability.
 
@@ -45,6 +45,103 @@ bwui is not a component library competing with Bootstrap, Tailwind, or Material 
 
 Its purpose is to provide a small, predictable foundation for building interfaces that prioritize structure, usability, and maintainability. Developers remain free to customize, theme, and extend the framework as needed, but the default experience intentionally favors simplicity over visual complexity.
 
+## Abstractions for intent
+
+bwui provides abstractions that represent user interface intent rather than CSS implementation details. The goal is to help developers think in terms of structure, hierarchy, and user experience rather than individual CSS properties. These abstractions should represent concepts that developers already recognize, such as a Page, Navigation, Dialog, or Empty State.
+
+Additionally, abstractions are composable by nature. Complex interfaces should emerge from combining a small number of well-defined primitives rather than relying on a large collection of specialized components. By making sensible decisions regarding the names and responsibilities of these abstractions, bwui is able to leverage the intuition of the developer, naturally guiding them towards consistent and maintainable interface structures.
+
+Ultimately, these abstractions are intended to help developers answer the question of "What should I build?" rather than "How should I style it?"
+
+Following this philosophy, we believe most user interfaces can be expressed through a small set of reusable abstractions. bwui organizes these abstractions into the following categories:
+
+* Structural
+* Navigational
+* Content Presentation
+* Forms
+* Feedback
+* Actions
+* Dialogs
+* Layout Primitives
+
+## Concepts
+
+bwui is built around a small set of concepts that guide both the design of the framework and the way it is intended to be used.
+
+### Abstractions
+
+Abstractions represent concepts that developers recognize, such as a Page, Navigation, Dialog, Field, or Empty State. By modeling familiar interface concepts directly, bwui encourages interfaces to be built from meaningful building blocks rather than collections of unrelated styles.
+
+Abstractions form the public API of bwui.
+
+### Layers
+
+Layers provide the internal structure of bwui. While abstractions define what bwui exposes to developers, layers define how the framework itself is organized and maintained. Each layer has a distinct responsibility and exists to separate concerns within the framework. This helps keep the codebase predictable, scalable, and easier to reason about as the number of abstractions grows.
+
+bwui organizes its implementation into the following layers:
+
+* Tokens
+* Base
+* Layout
+* Components
+* Patterns
+
+Layers are an implementation detail of the framework and are primarily intended to guide contributors rather than consumers.
+
+### State Model & Implementation
+
+State represents changes in the condition, behavior, or meaning of an abstraction. Examples of state include a Field being invalid, a Navigation item being active, or a Dialog being open.
+
+bwui prefers to represent state using established web standards whenever possible. When representing state, the following order of preference should be used:
+
+* Native HTML attributes
+* ARIA attributes
+* Custom data-* attributes
+
+By building on existing browser and accessibility semantics, interfaces remain predictable, accessible, and easier to maintain.
+
+### Composition
+
+bwui is built around the idea that complex interfaces should emerge from the composition of simple abstractions. Rather than providing highly specialized components for every possible use case, bwui encourages developers to combine a small set of reusable building blocks to create more sophisticated user interfaces.
+
+This approach helps keep the framework small, predictable, and easier to maintain. It also allows abstractions to remain broadly applicable across different applications and domains.
+
+As a result, bwui favors composability over specialization and primitives over one-off solutions.
+
+### Design Tokens
+
+Design tokens provide the foundation for visual consistency throughout bwui. Colors, spacing, typography, borders, and other design decisions are represented as reusable tokens rather than hardcoded values.
+
+By centralizing these values, bwui is able to maintain consistency across abstractions while still allowing consumers to customize and theme the framework when needed.
+
+Tokens are implementation primitives rather than public abstractions. Their purpose is to provide a shared vocabulary for design decisions throughout the framework.
+
+### Customization
+
+bwui is designed to be customizable without sacrificing consistency. Consumers are encouraged to customize design tokens such as colors, spacing, typography, and borders to align the framework with their own visual identity.
+
+At the same time, bwui intentionally places more emphasis on preserving structural abstractions than on unlimited visual flexibility. The goal is to allow applications to develop their own look and feel while continuing to benefit from a consistent set of patterns and conventions.
+
+As a result, bwui favors customization through tokens and composition rather than extensive modification of abstraction behavior.
+
+### Naming Convention
+
+bwui uses the Block, Element, Modifier (BEM) methodology for all public classes. BEM provides a predictable structure for representing abstractions and the relationships between them.
+
+By adopting a consistent naming convention, bwui reduces ambiguity, improves maintainability, and makes interfaces easier to understand as they grow in complexity.
+
+All public classes are prefixed with `bwui-` to avoid collisions with application-specific styles and to clearly distinguish framework abstractions from consumer code.
+
+Classes prefixed with `_bwui-` are considered private implementation details and are not intended for consumer use. Private classes may change or be removed without notice and should not be relied upon by applications.
+
+### Accessibility
+
+Accessibility is a first-class concern in bwui. The framework aims to provide accessible defaults and encourages the use of semantic HTML, keyboard-friendly interactions, visible focus states, and sufficient contrast.
+
+bwui prefers established web standards over framework-specific solutions wherever possible. By building on the semantics already provided by the web platform, interfaces become more accessible, predictable, and maintainable.
+
+While bwui is designed to support accessibility best practices, final accessibility compliance remains the responsibility of the application developer.
+
 ## Installation
 
 WIP
@@ -54,5 +151,25 @@ WIP
 WIP
 
 ## Customization
+
+WIP
+
+## Project Maturity Checklist
+
+- [x] MIT License
+- [ ] Semantic Versioning
+- [ ] Accessibility Statement
+- [ ] Browser Support Matrix
+- [ ] Framework Compatibility Matrix
+- [ ] Public API Documentation
+- [ ] Theming Guide
+- [ ] Migration Guides
+- [ ] Dependency Audit
+- [ ] CI/CD Pipeline
+- [ ] Visual Regression Testing
+- [ ] Accessibility Testing
+- [ ] Changelog
+
+## Non-goals
 
 WIP
