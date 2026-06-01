@@ -1,0 +1,11 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--bwui-font-family-base, system-ui, sans-serif);
+  color: var(--bwui-color-text);
+  background-color: var(--bwui-color-surface);
+  line-height: var(--bwui-line-height-base);
+}
