@@ -21,7 +21,7 @@ The current era of web development, powered by LLMs and agentic tools, has embra
 
 One could argue that modern LLMs are capable enough to generate custom solutions that follow best practices. That may be true. But that misses the point. Software engineering has always been about building on proven abstractions rather than reinventing the wheel every time.
 
-bwui does not aim to solve an ambitious problem. It exists to provide a simple foundation for building user interfaces. It comes with sensible defaults out of the box, while still exposing the knobs and switches needed to customize the experience when required. 
+bwui does not aim to solve an ambitious problem. It exists to provide a simple foundation for building user interfaces. It comes with sensible defaults out of the box, while still exposing the knobs and switches needed to customize the experience when required.
 
 ## Why black and white?
 
@@ -55,14 +55,14 @@ Ultimately, these abstractions are intended to help developers answer the questi
 
 Following this philosophy, we believe most user interfaces can be expressed through a small set of reusable abstractions. bwui organizes these abstractions into the following categories:
 
-* Structural
-* Navigational
-* Content Presentation
-* Forms
-* Feedback
-* Actions
-* Dialogs
-* Layout Primitives
+- Structural
+- Navigational
+- Content Presentation
+- Forms
+- Feedback
+- Actions
+- Dialogs
+- Layout Primitives
 
 ## Concepts
 
@@ -80,11 +80,11 @@ Layers provide the internal structure of bwui. While abstractions define what bw
 
 bwui organizes its implementation into the following layers:
 
-* Tokens
-* Base
-* Layout
-* Components
-* Patterns
+- Tokens
+- Base
+- Layout
+- Components
+- Patterns
 
 Layers are an implementation detail of the framework and are primarily intended to guide contributors rather than consumers.
 
@@ -94,9 +94,9 @@ State represents changes in the condition, behavior, or meaning of an abstractio
 
 bwui prefers to represent state using established web standards whenever possible. When representing state, the following order of preference should be used:
 
-* Native HTML attributes
-* ARIA attributes
-* Custom data-* attributes
+- Native HTML attributes
+- ARIA attributes
+- Custom data-\* attributes
 
 By building on existing browser and accessibility semantics, interfaces remain predictable, accessible, and easier to maintain.
 

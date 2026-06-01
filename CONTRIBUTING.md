@@ -6,12 +6,12 @@ Before contributing, please familiarize yourself with the project's philosophy a
 
 All contributions should align with the core principles of bwui:
 
-* Structure over aesthetics
-* Sensible defaults
-* Constraint over unlimited choice
-* Consistency over novelty
-* Accessibility by default
-* Maintainability over convenience
+- Structure over aesthetics
+- Sensible defaults
+- Constraint over unlimited choice
+- Consistency over novelty
+- Accessibility by default
+- Maintainability over convenience
 
 ## Abstractions
 
@@ -19,19 +19,19 @@ Abstractions form the public API of bwui.
 
 Before introducing a new abstraction, ask:
 
-* Is this a concept developers already recognize?
-* Is this broadly applicable across applications?
-* Can this be composed from existing abstractions?
+- Is this a concept developers already recognize?
+- Is this broadly applicable across applications?
+- Can this be composed from existing abstractions?
 
 ## Layers
 
 bwui is organized into the following layers:
 
-* Tokens
-* Base
-* Layout
-* Components
-* Patterns
+- Tokens
+- Base
+- Layout
+- Components
+- Patterns
 
 Contributors should place code in the appropriate layer and avoid mixing responsibilities between layers.
 
@@ -61,7 +61,7 @@ When representing state, use the following order of preference:
 
 1. Native HTML attributes
 2. ARIA attributes
-3. Custom data-* attributes
+3. Custom data-\* attributes
 
 ## Accessibility
 
