@@ -1,0 +1,18 @@
+$colors: (
+  "white": #ffffff,
+  "black": #000000,
+
+  "text": #000000,
+  "surface": #ffffff,
+
+  "border": #d9d9d9,
+  "disabled": #808080,
+
+  "focus": #000000,
+);
+
+:root {
+  @each $name, $value in $colors {
+    --bwui-color-#{$name}: #{$value};
+  }
+}

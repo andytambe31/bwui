@@ -1,0 +1,19 @@
+$border-widths: (
+  base: 1px,
+);
+
+$border-radii: (
+  sm: 2px,
+  md: 4px,
+  lg: 8px,
+);
+
+:root {
+  @each $name, $value in $border-widths {
+    --bwui-border-width-#{$name}: #{$value};
+  }
+
+  @each $name, $value in $border-radii {
+    --bwui-border-radius-#{$name}: #{$value};
+  }
+}

@@ -1,0 +1,15 @@
+$durations: (
+  fast: 100ms,
+  base: 200ms,
+  slow: 300ms,
+);
+
+$easings: (
+  standard: ease,
+);
+
+:root {
+  @each $name, $value in $durations {
+    --bwui-duration-#{$name}: #{$value};
+  }
+}
