@@ -23,6 +23,29 @@ Before introducing a new abstraction, ask:
 - Is this broadly applicable across applications?
 - Can this be composed from existing abstractions?
 
+### Adding new Abstractions
+
+Before implementing a new abstraction, contributors should answer the following questions:
+
+1. Is this a concept developers already recognize?
+2. Is it broadly applicable across applications?
+3. Can it be composed from existing abstractions?
+4. Which layer does it belong to?
+5. What is its public API?
+6. Does it have state?
+7. Does it have accessibility implications?
+
+**Abstraction Checklist**
+
+- [ ] Purpose is clearly defined
+- [ ] Responsibilities are documented
+- [ ] Non-responsibilities are documented
+- [ ] Correct layer has been selected
+- [ ] Public API is documented
+- [ ] State model has been defined
+- [ ] Accessibility implications have been considered
+- [ ] Documentation has been updated
+
 ## Layers
 
 bwui is organized into the following layers:
