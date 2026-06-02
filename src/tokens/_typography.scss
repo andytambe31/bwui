@@ -20,6 +20,10 @@ $line-heights: (
 );
 
 :root {
+  @each $name, $value in $font-families {
+    --bwui-font-family-#{$name}: #{$value};
+  }
+
   @each $name, $value in $font-sizes {
     --bwui-font-size-#{$name}: #{$value};
   }
