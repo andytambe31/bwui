@@ -1,0 +1,23 @@
+///
+/// Container
+///
+/// Defines a horizontal content boundary that constrains content width
+/// and centers content within the viewport.
+///
+/// Container exists to improve readability and consistency by preventing
+/// content from expanding indefinitely on large screens while maintaining
+/// appropriate spacing near viewport edges.
+///
+/// @group Layout
+/// @since 0.1.0
+/// @access public
+///
+/// @example html
+/// <main class="bwui-container">
+///   <h1>Dashboard</h1>
+/// </main>
+///
+.bwui-container {
+  width: min(100% - var(--bwui-spacing-md) * 2, 72rem);
+  margin-inline: auto;
+}
