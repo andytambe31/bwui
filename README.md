@@ -157,7 +157,7 @@ WIP
 ## Project Maturity Checklist
 
 - [x] MIT License
-- [ ] Semantic Versioning
+- [x] Semantic Versioning
 - [ ] Accessibility Statement
 - [ ] Browser Support Matrix
 - [ ] Framework Compatibility Matrix
