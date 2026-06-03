@@ -1,0 +1,21 @@
+///
+/// Input
+///
+/// Represents a single-line text input.
+///
+/// @group Components
+/// @since 0.1.0
+/// @access public
+///
+.bwui-input {
+  width: 100%;
+
+  padding: var(--bwui-spacing-sm) var(--bwui-spacing-md);
+
+  border: var(--bwui-border-width-base) solid var(--bwui-color-border);
+
+  border-radius: var(--bwui-border-radius-md);
+
+  background-color: var(--bwui-color-surface);
+  color: var(--bwui-color-text);
+}

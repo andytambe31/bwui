@@ -1,0 +1,25 @@
+///
+/// Button
+///
+/// Represents an action that can be triggered by the user.
+///
+/// @group Components
+/// @since 0.1.0
+/// @access public
+///
+.bwui-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: var(--bwui-spacing-sm) var(--bwui-spacing-md);
+
+  border: var(--bwui-border-width-base) solid var(--bwui-color-border);
+
+  border-radius: var(--bwui-border-radius-md);
+
+  background-color: var(--bwui-color-surface);
+  color: var(--bwui-color-text);
+
+  cursor: pointer;
+}
