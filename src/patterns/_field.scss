@@ -1,0 +1,14 @@
+///
+/// Field
+///
+/// Composes form-related elements into a complete field structure.
+///
+/// @group Patterns
+/// @since 0.1.0
+/// @access public
+///
+.bwui-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--bwui-spacing-xs);
+}
