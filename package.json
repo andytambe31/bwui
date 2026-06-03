@@ -2,7 +2,6 @@
   "name": "bwui",
   "version": "0.1.0-alpha.0",
   "description": "bwui (pronounced as buoy) is a lightweight CSS framework for building functional user interfaces with minimal configuration.",
-  "main": "index.js",
   "scripts": {
     "build": "sass src/bwui.scss dist/bwui.css",
     "build:min": "sass src/bwui.scss dist/bwui.min.css --style=compressed",
@@ -13,10 +12,27 @@
     "type": "git",
     "url": "git+https://github.com/andytambe31/bwui.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "keywords": [
+    "css",
+    "scss",
+    "sass",
+    "framework",
+    "ui",
+    "frontend",
+    "bwui"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "author": "Aniruddha Tambe",
+  "license": "MIT",
+  "style": "dist/bwui.css",
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
   "bugs": {
     "url": "https://github.com/andytambe31/bwui/issues"
   },
@@ -26,7 +42,6 @@
     "prettier": "^3.8.3",
     "sass": "^1.100.0",
     "stylelint": "^17.12.0",
-    "stylelint-config-standard": "^40.0.0",
-    "vite": "^8.0.15"
+    "stylelint-config-standard": "^40.0.0"
   }
 }
