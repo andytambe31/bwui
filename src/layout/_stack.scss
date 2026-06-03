@@ -1,0 +1,26 @@
+///
+/// Stack
+///
+/// Defines a vertical flow of content with consistent spacing between
+/// direct children.
+///
+/// Stack exists to make vertical composition predictable without requiring
+/// each component or pattern to manage its own spacing.
+///
+/// @group Layout
+/// @since 0.1.0
+/// @access public
+///
+/// @example html
+/// <div class="bwui-stack">
+///   <h1>Dashboard</h1>
+///   <p>Overview of recent activity.</p>
+/// </div>
+///
+.bwui-stack {
+  // Apply spacing only between direct children so nested layouts can
+  // control their own internal rhythm.
+  display: flex;
+  flex-direction: column;
+  gap: var(--bwui-spacing-md);
+}
