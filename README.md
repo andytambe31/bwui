@@ -25,7 +25,7 @@ bwui does not aim to solve an ambitious problem. It exists to provide a simple f
 
 ## Why black and white?
 
-Part of it is personal preference on the part of the people who built it. But I believe there is a philosophy behind it as well.
+Part of it is personal preference on the part of the people who built it. But there is a philosophy behind it as well.
 
 Black and white represent two extremes. Between them lies an entire spectrum of possibilities. bwui chooses to start at those extremes and provide a simple, opinionated foundation. The framework works well out of the box with a monochrome design system, while still allowing users to introduce their own colors, themes, and visual identity when needed.
 
@@ -45,7 +45,7 @@ bwui is not a component library competing with Bootstrap, Tailwind, or Material 
 
 Its purpose is to provide a small, predictable foundation for building interfaces that prioritize structure, usability, and maintainability. Developers remain free to customize, theme, and extend the framework as needed, but the default experience intentionally favors simplicity over visual complexity.
 
-## Abstractions for intent
+## Abstractions for Intent
 
 bwui provides abstractions that represent user interface intent rather than CSS implementation details. The goal is to help developers think in terms of structure, hierarchy, and user experience rather than individual CSS properties. These abstractions should represent concepts that developers already recognize, such as a Page, Navigation, Dialog, or Empty State.
 
@@ -53,7 +53,7 @@ Additionally, abstractions are composable by nature. Complex interfaces should e
 
 Ultimately, these abstractions are intended to help developers answer the question of "What should I build?" rather than "How should I style it?"
 
-Following this philosophy, we believe most user interfaces can be expressed through a small set of reusable abstractions. bwui organizes these abstractions into the following categories:
+Following this philosophy, most user interfaces can be expressed through a small set of reusable abstractions. bwui organizes these abstractions into the following categories:
 
 - Structural
 - Navigational
@@ -144,15 +144,59 @@ While bwui is designed to support accessibility best practices, final accessibil
 
 ## Installation
 
-WIP
+Install bwui using npm:
+
+```bash
+npm install @andytambe31/bwui
+```
+
+Import the compiled stylesheet:
+
+```js
+import "@andytambe31/bwui/dist/bwui.css";
+```
+
+Or include it directly in HTML:
+
+```html
+<link rel="stylesheet" href="./node_modules/@andytambe31/bwui/dist/bwui.css" />
+```
 
 ## Components
 
-WIP
+### Layout
+
+- `.bwui-container`
+- `.bwui-stack`
+- `.bwui-cluster`
+- `.bwui-grid`
+
+### Components
+
+- `.bwui-button`
+- `.bwui-card`
+- `.bwui-input`
+
+### Patterns
+
+- `.bwui-page`
+- `.bwui-field`
+- `.bwui-empty-state`
 
 ## Customization
 
-WIP
+bwui exposes design tokens as CSS custom properties. Consumers can override these values to customize the framework while preserving its structure.
+
+Example:
+
+```css
+:root {
+  --bwui-color-text: #111111;
+  --bwui-color-surface: #ffffff;
+  --bwui-spacing-md: 1rem;
+  --bwui-border-radius-md: 4px;
+}
+```
 
 ## Project Maturity Checklist
 
@@ -172,4 +216,15 @@ WIP
 
 ## Non-goals
 
-WIP
+bwui does not aim to be:
+
+- A JavaScript framework
+- A utility-first CSS framework
+- A full design system
+- A replacement for application-specific UI
+- A component library with hundreds of components
+- A guarantee of application-level accessibility compliance
+
+## License
+
+MIT
