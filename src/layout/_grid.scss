@@ -1,0 +1,14 @@
+///
+/// Grid
+///
+/// Defines a responsive grid for repeated content.
+///
+/// @group Layout
+/// @since 0.1.0
+/// @access public
+///
+.bwui-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+  gap: var(--bwui-spacing-md);
+}

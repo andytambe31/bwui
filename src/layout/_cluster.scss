@@ -1,0 +1,15 @@
+///
+/// Cluster
+///
+/// Groups related items horizontally with wrapping behavior.
+///
+/// @group Layout
+/// @since 0.1.0
+/// @access public
+///
+.bwui-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--bwui-spacing-md);
+}
